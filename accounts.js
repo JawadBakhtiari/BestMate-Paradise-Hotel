@@ -130,5 +130,4 @@ function registerUser() {
 		window.location.href = "signin.html";
 	}
 	localStorage.setItem('database', JSON.stringify(customers))
-
 }
