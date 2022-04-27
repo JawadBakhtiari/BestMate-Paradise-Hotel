@@ -3,7 +3,7 @@ var admin = {
 	password: "admin"
 }
 
-var customers = [
+var databaser = [
 	{
 		first_name: "joe",
 		last_name: "bakhtiari",
@@ -18,8 +18,15 @@ var customers = [
 	}
 ]
 
+//localStorage.setItem('database', JSON.stringify(databaser))
 
 function signIn() {
+	var customers = JSON.parse(localStorage.getItem("database"));
+	if(customers==null) {
+		localStorage.setItem('database', JSON.stringify(databaser))
+	}
+	var customers = JSON.parse(localStorage.getItem("database"));
+
 	var email = document.getElementById("signup_email").value
 	var password = document.getElementById("signup_password").value
 
@@ -37,9 +44,17 @@ function signIn() {
 	if (success==0) {
 		alert("Sorry your email or password is not correct!")
 	}
+
+
 }
 
 function registerUser() {
+	var customers = JSON.parse(localStorage.getItem("database"));
+	if(customers==null) {
+		localStorage.setItem('database', JSON.stringify(databaser))
+	}
+	var customers = JSON.parse(localStorage.getItem("database"));
+
 	var first_name = document.getElementById("signup_first_name").value
 	var last_name = document.getElementById("signup_last_name").value
 	var dob = document.getElementById("signup_dob").value
@@ -78,4 +93,5 @@ function registerUser() {
 		customers.push(newCustomer)
 		alert("successfull sign up")
 	}
+	localStorage.setItem('database', JSON.stringify(customers))
 }
