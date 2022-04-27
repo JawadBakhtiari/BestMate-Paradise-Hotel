@@ -28,7 +28,7 @@ function displayName() {
 		document.write("")
 	}
 	else {
-		document.write(user.first_name + ", Sign Out")
+		document.write(user.first_name)
 	}
 }
 
@@ -129,4 +129,5 @@ function registerUser() {
 		alert("successfull sign up")
 	}
 	localStorage.setItem('database', JSON.stringify(customers))
+	window.location.href = "signin.html";
 }
