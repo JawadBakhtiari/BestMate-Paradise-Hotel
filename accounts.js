@@ -25,10 +25,31 @@ var databaser = [
 function displayName() {
 	var user = JSON.parse(localStorage.getItem("user"));
 	if(user==null) {
-		document.write("Sign In")
+		document.write("")
 	}
 	else {
 		document.write(user.first_name + ", Sign Out")
+	}
+}
+
+function logOut() {
+	var user = JSON.parse(localStorage.getItem("user"));
+	if(user==null) {
+		window.location.href = "signin.html";
+	}
+	else {
+		localStorage.removeItem("user");
+		window.location.href = "signin.html";
+	}
+}
+
+function button() {
+	var user = JSON.parse(localStorage.getItem("user"));
+	if(user==null) {
+		document.write("Sign In")
+	}
+	else {
+		document.write("Sign Out")
 	}
 }
 
