@@ -23,6 +23,7 @@ var databaser = [
 //localStorage.setItem('database', JSON.stringify(databaser))
 
 function displayName() {
+	var user = JSON.parse(localStorage.getItem("user"));
 	if(user==null) {
 		document.write("Sign In")
 	}
@@ -46,7 +47,8 @@ function signIn() {
 	for(i = 0; i < customers.length; i++) {
 		if(email == customers[i].email && password == customers[i].password) {
 			alert("Hi " + customers[i].first_name + " you have signed in!")
-			user = customers[i]
+			//user = customers[i].first_name
+			localStorage.setItem('user', JSON.stringify(customers[i]))
 			window.location.href = "booking.html";
 			success = 1
 		}
