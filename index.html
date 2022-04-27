@@ -1,1 +1,364 @@
-hello
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>BestMate Paradise Hotel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="main.css">
+        <script src="https://kit.fontawesome.com/dbed6b6114.js" crossorigin="anonymous"></script>
+        <link rel = "icon" href = "images/logo.png" type = "image/png">
+    </head>
+    <body>
+        
+        <!-- Header -->
+        <header class = "header" id = "header">
+            <div class = "head-top">
+                <div class = "site-nav">
+                    <span id = "nav-btn">MENU <i class = "fas fa-bars"></i></span>
+                </div>
+                
+                <div class = "site-name">
+                    <span>BESTMATE PARADISE HOTEL</span>
+                </div>
+                
+            </div>
+
+            <div class = "head-bottom flex">
+                <h2> ONLY THE BEST FOR YOUR BESTMATE </h2>
+                <p> Offering an array of services to cater to your pets needs, an unforgettable stay for your furry friend is just a click away. </p>
+                <form action="./booking.html">
+                    <input type="submit" class = "head-btn" value="LET'S BOOK" />
+                </form>
+            </div>
+            
+            <! -- Add Video Here -->
+            <center>
+                 <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                    Your browser does not support the video tag.
+                </video>
+            </center>
+            <! -- End Video Here -->
+            
+        </header>
+        <!-- End of Header -->
+
+        <!-- Side Navbar -->
+        <div class = "sidenav" id = "sidenav">
+            <span class = "cancel-btn" id = "cancel-btn">
+                <i class = "fas fa-times"></i>
+            </span>
+
+            <ul class = "navbar">
+                <li><a href = "index.html">Home</a></li>
+                <li><a href = "about.html">About Us</a></li>
+                <li><a href = "#services">Services</a></li>
+                <li><a href = "#rooms">Rooms</a></li>
+                <li><a href = "booking.html">Booking Page</a></li>
+                <li><a href = "#customers">Customers</a></li>
+                <li><a href = "privacy.html">Privacy Policy</a></li>
+                <li><a href = "FAQ.html">FAQ</a></li>
+                <li><a href = "contact.html">Contact Us</a></li>
+            </ul>
+            <!-- <button class = "btn sign-up">SIGN UP</button> -->
+             <form action="./signup.html">
+                    <input type="submit" class = "head-btn" value="SIGN UP" />
+             </form>
+            <!-- <button class = "btn log-in">LOG IN</button> -->
+             <form action="./signin.html">
+                    <input type="submit" class = "head-btn" value="SIGN IN" />
+             </form>
+        </div>
+        <!-- End of Side Navbar -->
+
+        <!-- Display Type -->
+        <div id = "modal"></div>
+        <!-- End of Display Type -->
+
+        <!-- Services -->
+        <section class = "services sec-width" id = "Services">
+            <div class = "title">
+                <h2>services</h2>
+            </div>
+            <div class = "services-container">
+                
+                <!-- Food Service -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-utensils"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Quality Food Service</h2>
+                        <p>A variety of animal breeds will be provided with exceptional food and water. All pets are fed in a timely manner and are ensured that all necessary meals are provided!</p>
+                    </div>
+                </article>
+                <!-- End of Food Service -->
+                
+                <!-- Recreational Facilities -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-swimming-pool"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Recreational Facilities</h2>
+                        <p>Pets are provided with the option to use our recreational facilities under the guidance of professionally trained keepers. Our facilities are always maintained and kept clean!</p>
+                    </div>
+                </article>
+                <!-- End of Recreational Facilities -->
+                
+                <!-- Housekeeping and Maintenance -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-broom"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Housekeeping and Maintenance</h2>
+                        <p>All pets are subject for a stay of maximum 28 days. Every accomodation is cleaned every morning and all facilities used by pets are subject to ongoing maintenance, ensuring for ease of use for pets and staff.</p>
+                    </div>
+                </article>
+                <!-- End of Housekeeping and Maintenance -->
+                
+                <!-- Security -->
+                <article class = "service">
+                    <div class = "service-icon">
+                        <span>
+                            <i class = "fas fa-door-closed"></i>
+                        </span>
+                    </div>
+                    <div class = "service-content">
+                        <h2>Security</h2>
+                        <p>All pets are guaranteed of a secure place to stay under constant surveillance by staff. Each room is checked prior to sleep and staff are always monitoring the pet rooms to ensure no suspicious activity occurs.</p>
+                    </div>
+                </article>
+                <!-- End of Security -->
+           
+            </div>
+        </section>
+        <!-- End of Services -->
+        
+        <!-- Rooms -->
+        <section class = "rooms sec-width" id = "rooms">
+            <div class = "title">
+                <h2>pet houses</h2>
+            </div>
+            <div class = "rooms-container">
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img1.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Gold Membership Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Spa and pool for the pets.
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                The best play equiptment
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Best gourmet healthy food and drinks, with some snakcs!.
+                            </li>
+                        </ul>
+                        <p> Your pet will be given baths, taken cared by the sweetest and friendliest pet lovers. We will help them feel safe and welcomed with lux toys and food!</p>
+                        <p> This class contains lux sleeping areas, quiet and play areas, with an outdoor that contains a pool. The toilets are well maintained as well.</p>
+                        <p class = "rate">
+                            <span>$20.00 /</span> Per Night
+                        </p>
+                        <form action="booking.html">
+                                <input type="submit" class = "head-btn" value="BOOK NOW!">
+                        </form>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img2.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Silver Membership Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Amazing treats and food.
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Outdoor equiptment and playground.
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Lovely pet lovers will take care of your pet.
+                            </li>
+                        </ul>
+                        <p> Need a loving and friendly enviornment for your pet? This room has lots of play areas, loving pet care takers, with some yummy treats and clean bathrooms.</p>
+                        <p> This room gives the pets some fresh air and still some quiet time, in the quiet spaces for the sleepy pets. All food is healthy and the sleeping spaces are comfortable.</p>
+                        <p class = "rate">
+                            <span>$15.00 /</span> Per Night
+                        </p>
+                        <form action="booking.html">
+                                <input type="submit" class = "head-btn" value="BOOK NOW!">
+                        </form>
+                    </div>
+                </article>
+                <!-- end of single room -->
+                <!-- single room -->
+                <article class = "room">
+                    <div class = "room-image">
+                        <img src = "images/img3.jpg" alt = "room image">
+                    </div>
+                    <div class = "room-text">
+                        <h3>Bronze Membership Rooms</h3>
+                        <ul>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Space for the pets to play.
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Yummy treats and healthy food.
+                            </li>
+                            <li>
+                                <i class = "fa-light fa-arrow-right-from-arc"></i>
+                                Quiet sleeping spaces for your pets.
+                            </li>
+                        </ul>
+                        <p> Your pet can make some furry friends when playing in the play area with the new and fun funky equiptment, or your pet can have a sleep in the quiet area. Also there is healthy food night and morning provided. </p>
+                        <p> The quiet area has fluffy sleeping areas to keep your pet comfortable. The pet care takers are friendly and will keep your pet safe and protected. There will a new addition, using video games for the pets to play!</p>
+                        <p class = "rate">
+                            <span>$10.00 /</span> Per Night
+                        </p>
+                        <form action="booking.html">
+                                <input type="submit" class = "head-btn" value="BOOK NOW!">
+                        </form>
+                    </div>
+                </article>
+                <!-- end of single room -->
+            </div>
+        </section>
+        <!-- End of Rooms -->
+        
+        <!-- Customers -->
+        <section class = "customers" id = "customers">
+            <div class = "sec-width">
+                <div class = "title">
+                    <h2>customer reviews</h2>
+                </div>
+                <div class = "customers-container">
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <h3>Customisable and caring service</h3>
+                        <p>I left my cat Suzan for the weekend at paradise hotel, she had such an amazing time. The staff showed a lot of care and attention to my cat and also gave her favourite food thanks to the customisable pet requirements they have in their website, and also I noticed she is now a lot more behaved and happier at home. Will definitely recommend this service to family and friends.</p>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                        </div>
+                        <img src = "images/uglycat.jpg" alt = "customer image">
+                        <span>Hermione Granger</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+                        <h3>Website was easy to navigate and use</h3>
+                        <p>Horrible experience, will never be using this service again. I left Paradise hotel employees with 7 healthy gold fishes and when I went to pick them up, something was wrong, they were all dead. However they did give them a proper funeral at no extra charge, and their website was easy to navigate and use and was also aethestically pleasing.</p>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <img src = "images/fishfuneral.jpg" alt = "customer image">
+                        <span>Voldemort</span>
+                    </div>
+                    <!-- end of single customer -->
+                    <!-- single customer -->
+                    <div class = "customer">
+
+                        <h3>Quick reservation process</h3>
+                        <p>Very quick and easy online reservation process at short notice which was the main reason we chose Paradise Hotel. We left our pug Max at for 2 weeks while we travelled to Egypt for a short holiday. He had formed a close friendship with a female chihuaha and was upset having to leave. We later found out their friendship was a little too close and she is now filling for puppy support payments.</p>
+                        <div class = "rating">
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "fas fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                            <span><i class = "far fa-star"></i></span>
+                        </div>
+                        <img src = "images/sadpug.jpg" alt = "customer image">
+                        <span>Ron Weasly</span>
+                    </div>
+                    <!-- end of single customer -->
+                </div>
+            </div>
+        </section>
+       <!-- End of Customers -->
+        
+        <!-- Footer -->
+        <footer class = "footer">
+            <div class = "footer-container">
+                <div>
+                    <h2>About Us </h2>
+                    <a href = "about.html">About Us</a>
+                </div>
+
+                <div>
+                    <h2>Useful Links</h2>
+                    <a href = "index.html">Home</a>
+                    <a href = "signup.html">Create an account</a>
+                    <a href = "signin.html">Sign In</a>
+                    <a href = "booking.html">Booking Page</a>
+                    <a href = "about.html">About Us</a>
+                    <a href = "FAQ.html">FAQ</a>
+                    <a href = "privacy.html">Privacy Policy</a>
+                    <a href = "contact.html">Contact Us</a>
+                </div>
+
+                <div>
+                    <h2>Contact Us</h2>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-map-marker-alt"></i>
+                        </span>
+                        <span>
+                            The University of Sydney, NSW 2006, Australia
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-phone-alt"></i>
+                        </span>
+                        <span>
+                            +61 2 9351 2222
+                        </span>
+                    </div>
+                    <div class = "contact-item">
+                        <span>
+                            <i class = "fas fa-envelope"></i>
+                        </span>
+                        <span>
+                            info.bestparadisehotel@sydney.edu.au
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End of footer -->
+        <script src="nav-bar-action.js"></script>
+   </body>
+</html>
+
