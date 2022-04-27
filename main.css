@@ -41,6 +41,18 @@
     width:100%;
     
   }
+
+.heading3 {
+    padding: 50px 50px;
+    text-align: right;
+    color: #f2f2f2;
+    font-size:20px;
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    width:100%;
+    
+  }
 /* The navigation bar */
 .navbar_fixed {
   overflow: hidden;
