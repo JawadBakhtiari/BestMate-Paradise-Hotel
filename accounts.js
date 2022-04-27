@@ -26,11 +26,9 @@ function displayName() {
 	var user = JSON.parse(localStorage.getItem("user"));
 	if(user==null) {
 		document.write("Sign In")
-		alert("user is not logged in")
 	}
 	else {
-		document.write(user.first_name)
-		alert("user is logged in")
+		document.write(user.first_name + ", Sign Out")
 	}
 }
 
