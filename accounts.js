@@ -126,8 +126,9 @@ function registerUser() {
 			password
 		}
 		customers.push(newCustomer)
-		alert("successfull sign up")
+		alert("You have successfully registered your account, please log in now!")
+		window.location.href = "signin.html";
 	}
 	localStorage.setItem('database', JSON.stringify(customers))
-	window.location.href = "signin.html";
+
 }
