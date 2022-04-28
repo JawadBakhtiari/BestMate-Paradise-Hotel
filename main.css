@@ -561,7 +561,6 @@ img{
     background: var(--dark);
     color: #fff;
     text-align: center;
-    grid-template-rows: auto 1fr auto;
 }
 .footer-container{
     width: 85vw;
