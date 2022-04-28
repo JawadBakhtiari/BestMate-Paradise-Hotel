@@ -11,7 +11,7 @@
     font-family: 'Playfair Display', serif;
 }
 
-/* this is all for fixed header */
+/* Fixed Header ONLY - Steph */
 .spacer {
     top: 17mm;
     padding: 17mm;
@@ -59,7 +59,7 @@
     width:100%;
     
   }
-/* The navigation bar */
+/*Navigation Bar - Steph + Anusha */
 .navbar_fixed {
   overflow: hidden;
   background-color: #333;
@@ -67,7 +67,7 @@
   top: 20mm; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
 }
-/* Links inside the navbar */
+/* Links inside the navbar - Steph */
 .navbar_fixed a {
   float: left;
   display: block;
@@ -77,14 +77,13 @@
   text-decoration: none;
 }
 
-
 /* Change background on mouse-over */
 .navbar_fixed a:hover {
   background: #ddd;
   color: black;
 }
 
-/* Main content */
+/* Main Content - Wilson */
 
 .main {
   margin-top: 30px; /* Add a top margin to avoid content overlay */
@@ -134,7 +133,7 @@ img{
     }
 }
 
-/* header */
+/* Header - Anusha */
 .header{
     background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.2)), url("images/banner-img.jpg") center/cover no-repeat;
     min-height: 100vh;
@@ -202,7 +201,7 @@ img{
     }
 }
 
-/* side nav */
+/* Side Navigation Bar - Steph */
 .sidenav{
     background: var(--dark);
     color: #fff;
@@ -260,7 +259,7 @@ img{
     }
 }
 
-/** title */
+/** Title - Steph*/
 .title{
     text-transform: uppercase;
     letter-spacing: 3px;
@@ -310,7 +309,7 @@ img{
     }
 }
 
-/* booking form */
+/* Booking Form - Steph + Anusha */
 .book{
     background: linear-gradient(rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 0.85)), url("images/banner-img.jpg") center/cover no-repeat;
     color: #fff;
@@ -422,7 +421,7 @@ img{
     box-shadow: 0 0 7px rgba(0, 0, 0, 0.4);
 }
 
-/* room */
+/* room - Alisha */
 
 .rooms{
     margin: 40px 0;
@@ -497,7 +496,7 @@ img{
     }
 }
 
-/* customers */
+/* Customers - Anusha */
 
 .customers{
     margin-top: 40px;
@@ -562,7 +561,7 @@ img{
     }
 }
 
-/* footer */
+/* footer - Anusha */
 .footer{
     background: var(--dark);
     color: #fff;
@@ -633,7 +632,6 @@ img{
     font-family: 'Playfair Display', serif;
 }
 
-
 .sign-up-form a 
 {
     color: white;
@@ -680,13 +678,12 @@ img{
     cursor: pointer; /*brings thumb on hover*/
 }
 
-/* about*/
+/* About - Alisha*/
 .abouts{
     margin-top: 40px;
     padding: 40px 0;
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/happydogs.jpg") center/cover no-repeat fixed;
 }
-
 
 .skills{
     display: flex;
@@ -724,4 +721,21 @@ img{
     bottom: 0;
     left: 0;
     z-index: 5;
+}
+
+/* Social Icons - Anusha*/
+.social-icons{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 15px 0;
+}
+.social-icons li{
+    margin: 0 10px;
+    width: 50px;
+    height: 50px;
+    background: #2e2e2e;
+    border-radius: 50%;
+    transition: var(--transition);
+    cursor: pointer;
 }
