@@ -561,6 +561,7 @@ img{
     background: var(--dark);
     color: #fff;
     text-align: center;
+    position: sticky;
 }
 .footer-container{
     width: 85vw;
@@ -710,9 +711,6 @@ img{
         font-size: 24px;
     }
 }
-
-    
-
 .showModal{
     position: fixed;
     background: transparent;
