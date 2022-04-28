@@ -49,15 +49,15 @@
   }
 
 .heading3 {
-    padding: 50px 50px;
+    padding: 10px 10px;
     text-align: right;
     color: #f2f2f2;
     font-size:20px;
-    position: absolute;
+    position: fixed;
     overflow: hidden;
-    top: 0;
-    width:100%;
-    
+    top: 50px;
+    left: -20px;
+    width:100%;  
   }
 /*Navigation Bar - Steph + Anusha */
 .navbar_fixed {
