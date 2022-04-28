@@ -52,8 +52,10 @@
     text-align: right;
     color: #f2f2f2;
     font-size:20px;
-    position: fixed;
+    position: relative;
     overflow: hidden;
+    top: 0 px;
+    left: 0 px;
     width:100%;  
   }
 /*Navigation Bar - Steph + Anusha + Jawad */
