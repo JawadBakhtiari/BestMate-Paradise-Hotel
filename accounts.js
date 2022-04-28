@@ -21,6 +21,15 @@ var databaser = [
 ]
 
 //localStorage.setItem('database', JSON.stringify(databaser))
+function displayNameIndex() {
+	var user = JSON.parse(localStorage.getItem("user"));
+	if(user==null) {
+		document.write("")
+	}
+	else {
+		document.write("Welcome back, " + user.first_name)
+	}
+}
 
 function displayName() {
 	var user = JSON.parse(localStorage.getItem("user"));
