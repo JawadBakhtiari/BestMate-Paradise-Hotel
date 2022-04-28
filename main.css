@@ -734,7 +734,7 @@ img{
     margin: 0 10px;
     width: 50px;
     height: 50px;
-    background: #2e2e2e;
+    background: #f8f8f2;
     border-radius: 50%;
     transition: var(--transition);
     cursor: pointer;
