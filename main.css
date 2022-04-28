@@ -17,6 +17,12 @@
     padding: 17mm;
     width: 100%;
 }
+
+.space-confirmation{
+    top: 17mm;
+    padding: 5mm;
+    width: 100%;
+}
 .heading {
     padding: 20px;
     text-align: center;
