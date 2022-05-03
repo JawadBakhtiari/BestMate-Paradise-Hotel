@@ -38,26 +38,24 @@
     </header>
     <!-- END OF FIXED HEADER -->
 <div class = "book">
-            <form class = "book-form">
+            <form class = "book-form" action="https://api.sheetmonkey.io/form/d2JfwqHGWWVRJqL2uuPLoc" method="post">
                 <div class = "form-item">
-                    <label for = "checkin-date">Check In Date: </label>
-                    <input type = "date" id = "chekin-date">
+                    <label>Check In Date: <input type="date" name = "check-in" required /></label>
                 </div>
                 <div class = "form-item">
-                    <label for = "checkout-date">Check Out Date: </label>
-                    <input type = "date" id = "chekout-date">
+                    <label>Check Out Date: <input type="date" name = "check-out" required /></label>
                 </div>
                 <div class = "form-item">
                     <label for = "Room Type">Room Type:</label>
-                    <select name="select" id="#">
-                        <option value="1">Gold Membership Room</option>
-                        <option value="2">Silver Membership Room</option>
-                        <option value="3">Bronze Membership Room</option>
+                    <select name="Room Type" id="#">
+                        <option value="Gold Membership Room">Gold Membership Room</option>
+                        <option value="Silver Membership Room">Silver Membership Room</option>
+                        <option value="Bronze Membership Room">Bronze Membership Room</option>
                     </select>
                 </div>
                 <div class = "form-item">
                     <label for = "Pet">Type of Pet: </label>
-                    <select name="select" id="#">
+                    <select name="Type Of Pet" id="#">
                         <option value="Cat">Cat</option>
                         <option value="Dog">Dog</option>
                         <option value="Fish">Fish</option>
@@ -68,13 +66,15 @@
                 
                 <div class = "form-item">
                     <label for = "rooms">Rooms: </label>
-                    <input type = "number" min = "1" value = "1" id = "rooms">
+                    <input type = "number" name="Number of Rooms" min = "1" value = "1" id = "rooms">
                 </div>
+                <input type="hidden" name="Created" value="x-sheetmonkey-current-date-time" />
+                <input type="submit" value="BOOK NOW" />
             </form>
         </div>
 </section>
         <div class = "bbook">
-            <form class = "book-form" action="https://formsubmit.co/sixrip7er@gmail.com" method="POST">
+            <form class = "book-form">
                 <div class = "form-item">
                     <label for = "Diet">Pet's Dietary Requirements:</label>
                     <select name="select" id="#">
@@ -120,7 +120,6 @@
                 <div class = "form-item">
                     <input type="button" onclick="window.location.href = 'confirmation.html';" value="BOOK NOW"/>
                 </div>
-                <button type="submit">Send</button>
             </form>
         </div>
             
