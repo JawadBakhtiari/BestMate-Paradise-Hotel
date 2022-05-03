@@ -93,6 +93,7 @@ function signIn() {
 }
 
 function writeUserDetails() {
+	var user = JSON.parse(localStorage.getItem("user"));
 	document.write("<input type=hidden name = First Name value = " + user.first_name + ">")
 	document.write("<input type=hidden name = Last Name value = " + user.last_name + ">")
 	document.write("<input type=hidden name = Email value = " + user.email + ">")
