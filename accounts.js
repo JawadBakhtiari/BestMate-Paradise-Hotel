@@ -92,6 +92,12 @@ function signIn() {
 
 }
 
+function writeUserDetails() {
+	document.write("<input type=hidden name = First Name value = " + user.first_name + ">")
+	document.write("<input type=hidden name = Last Name value = " + user.last_name + ">")
+	document.write("<input type=hidden name = Email value = " + user.email + ">")
+}
+
 function registerUser() {
 	var customers = JSON.parse(localStorage.getItem("database"));
 	if(customers==null) {
