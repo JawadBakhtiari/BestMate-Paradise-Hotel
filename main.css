@@ -4,6 +4,8 @@
     --yellow: #f9d342;
     --dark: #292826;
 }
+
+/* For all elements*/
 *{
     box-sizing: border-box;
     padding: 0;
@@ -214,11 +216,11 @@ img{
     z-index: 10;
 }
 
-/********/
+
 .sidenav.show{
     left: 0;
 }
-/*************/
+
 .cancel-btn{
     position: absolute;
     right: 25px;
@@ -234,6 +236,7 @@ img{
     list-style: none;
     padding: 12px;
 }
+
 .navbar li a{
     color: #fff;
     text-transform: capitalize;
