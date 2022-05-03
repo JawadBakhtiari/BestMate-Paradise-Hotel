@@ -41,6 +41,13 @@ function displayName() {
 	}
 }
 
+function checkLoginForBooking() {
+	var user = JSON.parse(localStorage.getItem("user"));
+	if(user==null) {
+		window.location.href = "signin.html";
+	}
+}
+
 function logOut() {
 	var user = JSON.parse(localStorage.getItem("user"));
 	if(user==null) {
