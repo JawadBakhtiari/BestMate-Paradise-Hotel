@@ -1,6 +1,6 @@
 var admin = {
-	email: "admin@gmail.com",
-	password: "admin"
+	email: "admin",
+	password: "password"
 }
 
 var user = null
@@ -78,22 +78,30 @@ function signIn() {
 
 	var email = document.getElementById("signup_email").value
 	var password = document.getElementById("signup_password").value
-
+	
 	var success = 0
 
-	for(i = 0; i < customers.length; i++) {
-		if(email == customers[i].email && password == customers[i].password) {
-			alert("Hi " + customers[i].first_name + " you have signed in!")
-			//user = customers[i].first_name
-			localStorage.setItem('user', JSON.stringify(customers[i]))
-			window.location.href = "booking.html";
-			success = 1
-		}
-		//console.log("Yep this email does not exist with us")
+	if(email == admin.email && password == admin.password) {
+		alert("Hello admin!")
+		window.location.href = "https://docs.google.com/spreadsheets/d/13qBya-lIqMOzSayK0c-CE2BIAg7gvcX6oDPB4isTmvU/edit?usp=sharing";
 	}
 
-	if (success==0) {
-		alert("Sorry your email or password is not correct!")
+	else {
+		for(i = 0; i < customers.length; i++) {
+			if(email == customers[i].email && password == customers[i].password) {
+				alert("Hi " + customers[i].first_name + " you have signed in!")
+				//user = customers[i].first_name
+				localStorage.setItem('user', JSON.stringify(customers[i]))
+				window.location.href = "booking.html";
+				success = 1
+			}
+			//console.log("Yep this email does not exist with us")
+		}
+
+		if (success==0) {
+			alert("Sorry your email or password is not correct!")
+		}
+
 	}
 
 
