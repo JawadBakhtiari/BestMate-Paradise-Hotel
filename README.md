@@ -1,4 +1,4 @@
-# [BestMate-Paradise-Hotel](https://best-mate-paradise-hotel.vercel.app)
+# BestMate-Paradise-Hotel
 
 ## Introduction
 BestMate Paradise is a pet-only hotel offering high-quality services to a wide range of pet types in Sydney, Australia. BestMate Paradise consulted our software development team with the goal of developing a web system that allows people to make a booking for their pets to stay in the hotel while their owners are away or unable to look after them for a short while (a maximum of 28 days). They also wanted to help and support clients in finding suitable and affordable accommodation for their pets and enable them to make a booking with details of the animal "resident." We entered into this software development project and followed the software development lifecycle, executing the planning, analysis, and design phases.
